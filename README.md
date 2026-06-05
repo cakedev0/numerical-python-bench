@@ -13,8 +13,16 @@ pixi install
 Run the scikit-learn benchmark:
 
 ```bash
-pixi run python bench_sklearn.py --bench hgbt --threads 8
+pixi run python bench_sklearn.py --problem clf --threads 8
 ```
+
+Run the HGBT scaling sweep:
+
+```bash
+pixi run python bench_hgbt_sweep.py --threads 1,4,16,32,64 --repeats 2
+```
+
+The saved sweep notes are in `results/hgbt_sweep/analysis.md`.
 
 Run the Cython/OpenMP `prange` startup benchmark:
 

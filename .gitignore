@@ -14,3 +14,6 @@ bench_omp_startup_gxx
 
 # notebook checkpoints
 .ipynb_checkpoints/
+
+# Python bytecode
+__pycache__/

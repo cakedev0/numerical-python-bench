@@ -1,0 +1,21 @@
+{
+  "started": "2026-06-05T16:45:58Z",
+  "threads": [
+    1,
+    4,
+    16,
+    32,
+    64
+  ],
+  "repeats": 12,
+  "gc_disabled": true,
+  "env": {
+    "OMP_NUM_THREADS": null,
+    "OMP_PROC_BIND": null,
+    "OMP_PLACES": null
+  },
+  "stopped": "2026-06-05T17:06:00Z",
+  "status": "stopped_at_time_cap_after_completed_rows",
+  "completed_rows": 354,
+  "note": "The requested 20-30 minute cap was reached; completed configurations were summarized. huge_leaf1000 threads=64 has 6 repeats; later planned workloads did not start."
+}
