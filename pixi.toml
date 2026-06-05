@@ -1,0 +1,34 @@
+[workspace]
+channels = ["conda-forge"]
+name = "simple-expes"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "3.12.*"
+numpy = ">=2.4.6,<3"
+scipy = ">=1.17.1,<2"
+scikit-learn = ">=1.9.0,<2"
+threadpoolctl = ">=3.6.0,<4"
+psutil = ">=7.2.2,<8"
+cython = ">=3.1.7,<4"
+setuptools = ">=80.9.0,<81"
+
+[feature.intel-numpy]
+channels = ["https://software.repos.intel.com/python/conda/", "conda-forge"]
+channel-priority = "disabled"
+
+[feature.intel-numpy.dependencies]
+python = "3.12.*"
+numpy = { version = "==2.3.2", build = "py312h980fb23_7" }
+scipy = ">=1.17.1,<2"
+scikit-learn = ">=1.9.0,<2"
+threadpoolctl = ">=3.6.0,<4"
+psutil = ">=7.2.2,<8"
+cython = ">=3.1.7,<4"
+setuptools = ">=80.9.0,<81"
+
+[environments]
+intel-numpy = { features = ["intel-numpy"], no-default-feature = true }

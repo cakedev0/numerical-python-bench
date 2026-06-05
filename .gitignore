@@ -1,0 +1,16 @@
+# pixi environments
+.pixi/*
+!.pixi/config.toml
+
+# local virtual environments
+.pip-venv/
+
+# generated Cython build artifacts
+_cy_prange_startup_build/
+
+# compiled benchmark binaries
+bench_omp_startup_gcc
+bench_omp_startup_gxx
+
+# notebook checkpoints
+.ipynb_checkpoints/
